@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naylah Syifa Nadhifah | Portfolio Ilustrator</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind CSS untuk Styling Cepat & Responsif -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#0f172a', /* Biru Tua */
+                        'accent-blue': '#3b82f6',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- 1. HEADER & NAVIGASI -->
+    <header class="fixed w-full z-50 bg-primary-dark/90 backdrop-blur-md text-white shadow-lg">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-wider">
+                NAYLAH<span class="text-accent-blue">.</span>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex space-x-8 font-medium">
+                <li><a href="#home" class="hover:text-accent-blue transition">Home</a></li>
+                <li><a href="#about" class="hover:text-accent-blue transition">About</a></li>
+                <li><a href="#skills" class="hover:text-accent-blue transition">Skills</a></li>
+                <li><a href="#portfolio" class="hover:text-accent-blue transition">Portfolio</a></li>
+                <li><a href="#contact" class="hover:text-accent-blue transition">Contact</a></li>
+            </ul>
+
+            <!-- Mobile Menu Button (Hamburger) -->
+            <button class="md:hidden text-2xl" id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- 2. BERANDA (HOME) -->
+    <section id="home" class="hero-gradient min-h-screen flex items-center pt-20 text-white">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="order-2 md:order-1">
+                <h2 class="text-accent-blue font-semibold text-xl mb-2">Halo, nama saya Naylah</h2>
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">
+                    Naylah Syifa Nadhifah
+                </h1>
+                <p class="text-xl text-slate-300 mb-8 max-w-lg">
+                    Spesialis dalam <span class="text-white font-semibold">Menggambar Ilustrasi</span>. Selamat datang di web saya, salam kenal!
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#portfolio" class="bg-accent-blue hover:bg-blue-600 text-white px-8 py-3 rounded-full font-semibold transition shadow-lg shadow-blue-500/30">
+                        Lihat Portofolio
+                    </a>
+                    <a href="#contact" class="border-2 border-white/30 hover:border-white px-8 py-3 rounded-full font-semibold transition">
+                        Hubungi Saya
+                    </a>
+                </div>
+            </div>
+            <div class="order-1 md:order-2 flex justify-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80">
+                    <div class="absolute inset-0 bg-accent-blue rounded-full blur-2xl opacity-20 animate-pulse"></div>
+                    <img src="https://raw.githubusercontent.com/nsyifanadhifah-bot/portofolio-/refs/heads/main/9be0b047-dd63-46fe-802e-9ad6bbb2b497.jpg" alt="Foto Naylah" class="relative z-10 w-full h-full rounded-full border-4 border-accent-blue object-cover bg-slate-800">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. TENTANG SAYA (ABOUT ME) -->
+    <section id="about" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row gap-16 items-center">
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80&w=800" alt="Ilustrasi Drawing" class="rounded-2xl shadow-2xl">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6 flex items-center">
+                        <span class="w-12 h-1 bg-accent-blue mr-4"></span>Tentang Saya
+                    </h2>
+                    <p class="text-lg text-slate-600 mb-4 text-justify">
+                        Saya adalah anak pertama dari dua bersaudara yang lahir di <span class="font-semibold text-primary-dark">Garut, 20 Juli 2008</span>. Sejak kecil, saya memiliki ketertarikan yang mendalam terhadap dunia seni visual.
+                    </p>
+                    <p class="text-lg text-slate-600 mb-6 text-justify">
+                        Fokus utama saya adalah dalam bidang desain dan ilustrasi. Tujuan saya sangat sederhana namun bermakna: saya ingin terus mengembangkan diri agar bisa hidup lebih baik dan memberikan dampak positif melalui karya-karya saya.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-4 bg-slate-50 rounded-lg">
+                            <h4 class="font-bold text-accent-blue">Lahir</h4>
+                            <p>Garut, 20 Juli 2008</p>
+                        </div>
+                        <div class="p-4 bg-slate-50 rounded-lg">
+                            <h4 class="font-bold text-accent-blue">Minat</h4>
+                            <p>Seni & Desain</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. KEAHLIAN (SKILLS) -->
+    <section id="skills" class="py-24 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-16 text-center">Keahlian Utama</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Hard Skills -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-6 flex items-center">
+                        <i class="fas fa-tools mr-3 text-accent-blue"></i> Hard Skills
+                    </h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Menggambar Ilustrasi</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="w-full bg-slate-200 rounded-full h-2.5">
+                                <div class="bg-accent-blue h-2.5 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Desain Grafis</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="w-full bg-slate-200 rounded-full h-2.5">
+                                <div class="bg-accent-blue h-2.5 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Soft Skills -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-6 flex items-center">
+                        <i class="fas fa-users mr-3 text-accent-blue"></i> Soft Skills
+                    </h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100">
+                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                            <span>Komunikasi</span>
+                        </div>
+                        <div class="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100">
+                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                            <span>Kerja Tim</span>
+                        </div>
+                        <div class="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100">
+                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                            <span>Kreativitas</span>
+                        </div>
+                        <div class="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100">
+                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                            <span>Adaptasi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. PORTFOLIO -->
+    <section id="portfolio" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-4 text-center">Karya Terpilih</h2>
+            <p class="text-center text-slate-500 mb-12">Beberapa proyek desain dan ilustrasi yang telah saya kerjakan.</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Item 1 -->
+                <div class="card-hover group relative overflow-hidden rounded-2xl bg-slate-100 aspect-square shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&q=80&w=600" alt="Character Design" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-primary-dark/80 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition duration-300">
+                        <h4 class="text-white font-bold text-lg">Character Design</h4>
+                        <p class="text-slate-300 text-sm">Ilustrasi karakter kartun digital.</p>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="card-hover group relative overflow-hidden rounded-2xl bg-slate-100 aspect-square shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1544273677-277914c9ad4a?auto=format&fit=crop&q=80&w=600" alt="Digital Painting" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-primary-dark/80 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition duration-300">
+                        <h4 class="text-white font-bold text-lg">Digital Painting</h4>
+                        <p class="text-slate-300 text-sm">Pemandangan abstrak menggunakan media digital.</p>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="card-hover group relative overflow-hidden rounded-2xl bg-slate-100 aspect-square shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1557682250-33bd709cbe85?auto=format&fit=crop&q=80&w=600" alt="Logo Design" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-primary-dark/80 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition duration-300">
+                        <h4 class="text-white font-bold text-lg">Modern Branding</h4>
+                        <p class="text-slate-300 text-sm">Konsep logo minimalis untuk brand lokal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. KONTAK (CONTACT) -->
+    <section id="contact" class="py-24 bg-primary-dark text-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Mari Berkolaborasi!</h2>
+                    <p class="text-slate-400 mb-10 text-lg">Tertarik untuk bekerja sama atau ingin bertanya sesuatu? Silakan hubungi saya melalui saluran di bawah ini.</p>
+                    
+                    <ul class="space-y-6">
+                        <li class="flex items-center">
+                            <div class="w-12 h-12 bg-accent-blue/20 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope text-accent-blue"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Email</h4>
+                                <p class="text-slate-400">nsyifanadhifah@gmail.com</p>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-12 h-12 bg-accent-blue/20 rounded-full flex items-center justify-center mr-4">
+                                <i class="fab fa-whatsapp text-accent-blue"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">WhatsApp</h4>
+                                <p class="text-slate-400">0895-0302-6221</p>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-12 h-12 bg-accent-blue/20 rounded-full flex items-center justify-center mr-4">
+                                <i class="fab fa-instagram text-accent-blue"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Instagram</h4>
+                                <p class="text-slate-400">@naylandfh_</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Form Kontak -->
+                <div class="bg-slate-800 p-8 rounded-2xl shadow-xl">
+                    <form onsubmit="return false">
+                        <div class="mb-4">
+                            <label class="block text-sm font-medium mb-2">Nama Anda</label>
+                            <input type="text" placeholder="Masukkan nama" class="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-3 focus:outline-none focus:border-accent-blue transition">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-sm font-medium mb-2">Email</label>
+                            <input type="email" placeholder="Masukkan email" class="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-3 focus:outline-none focus:border-accent-blue transition">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-sm font-medium mb-2">Pesan</label>
+                            <textarea rows="4" placeholder="Apa yang ingin Anda sampaikan?" class="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-3 focus:outline-none focus:border-accent-blue transition"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-accent-blue hover:bg-blue-600 text-white font-bold py-3 rounded-lg transition">
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. FOOTER -->
+    <footer class="bg-black py-10 border-t border-slate-900">
+        <div class="container mx-auto px-6 text-center">
+            <div class="text-2xl font-bold text-white mb-6">
+                NAYLAH<span class="text-accent-blue">.</span>
+            </div>
+            <div class="flex justify-center space-x-6 mb-8 text-slate-400">
+                <a href="#" class="hover:text-white transition"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="#" class="hover:text-white transition"><i class="fab fa-linkedin fa-lg"></i></a>
+                <a href="#" class="hover:text-white transition"><i class="fab fa-github fa-lg"></i></a>
+            </div>
+            <p class="text-slate-500 text-sm">
+                &copy; 2024 Naylah Syifa Nadhifah. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script Sederhana untuk Mobile Menu -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const nav = document.querySelector('nav ul');
+
+        menuBtn.addEventListener('click', () => {
+            nav.classList.toggle('hidden');
+            nav.classList.toggle('flex');
+            nav.classList.toggle('flex-col');
+            nav.classList.toggle('absolute');
+            nav.classList.toggle('top-16');
+            nav.classList.toggle('left-0');
+            nav.classList.toggle('w-full');
+            nav.classList.toggle('bg-primary-dark');
+            nav.classList.toggle('p-6');
+            nav.classList.toggle('space-y-4');
+        });
+
+        // Close menu when clicking link
+        document.querySelectorAll('nav ul a').forEach(link => {
+            link.addEventListener('click', () => {
+                if(window.innerWidth < 768) {
+                    nav.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
